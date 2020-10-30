@@ -44,7 +44,7 @@
 
     <h2><a name="memory">二、基于内存的数据分享</a></h2>
 
-    <p>Spark极大地提高了大数据计算的速度，这来自于它基于内存的数据分享机制。本节比较各种存储介质访问的性能差异，获得对Spark基于内容的数据分享机制的理解</p>
+    <p>Spark极大地提高了大数据计算的速度，这来自于它基于内存的数据分享机制。本节比较各种存储介质访问的性能差异，获得对Spark基于内存的数据分享机制的理解。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1RZ4y1G7Xn/">B站视频</a></p>
 
@@ -56,26 +56,26 @@
 
     <h2><a name="rdd">四、弹性分布式数据集（RDD）</a></h2>
 
-    <p>弹性分布式数据集（RDD）是Spark的核心数据结构。它是只读的、分布式的、容错的。对它的操作是Lazy（懒）的。理解RDD是理解Spark工作机制的关键。本节介绍它的各项核心设计决策背后的思想，请一定要细心领会</p>
+    <p>弹性分布式数据集（RDD）是Spark的核心数据结构。它是只读的、分布式的、容错的。对它的操作是Lazy（懒）的。理解RDD是理解Spark工作机制的关键。本节介绍它的各项核心设计决策背后的思想，请一定细心领会。</p>
 
     <p><a href="https://www.bilibili.com/video/BV15t4y1i7za/">B站视频</a></p>
     <p>课程PPT：<a href="ppt/4-rdd.pdf">PDF</a>（3.4MB）</p>
 
     <h2><a name="partition">五、分区并行机制</a></h2>
 
-    <p>Spark通过将RDD进行分区，然后在各分区上进行并行计算，实现分布式计算。本节介绍分区的原理、性能、和优化方法。本节介绍的内容对优化Spark性能非常重要，请细心领会</p>
+    <p>Spark通过将RDD进行分区，然后在各分区上并行计算，实现高性能分布式计算。本节介绍分区的原理、性能和优化方法。本节内容对优化Spark性能非常重要，请细心领会。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1uA411E74q/">B站视频</a></p>
 
     <h2><a name="method">六、RDD操作方法</a></h2>
 
-    <p>Spark提供了基于Map-Reduce计算范式的RDD操作方法，同时设计了Lazy的操作执行方式。本节介绍它提供的各种操作函数，通过实例讲解这些函数的使用，以及Lazy方式带来的好处。本节对Spark编程非常重要。</p>
+    <p>Spark提供了基于Map-Reduce计算范式的各种RDD操作方法，同时设计了Lazy的操作执行方式。本节介绍它提供的各种操作函数，并通过实例讲解这些函数的使用，以及Lazy方式带来的好处。本节对Spark编程非常重要。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1gy4y187Mx/">B站视频</a></p>
 
     <h2><a name="rdd-lab">七、RDD编程练习</a></h2>
 
-    <p>本节基于华为NAIE Spark在线练习平台，我们一起来练习Piotrszul Spark入门练习代码的第一课：RDD基础。这是一个简单的文本处理的例子，帮助你熟悉RDD编程的基本流程和函数</p>
+    <p>本节基于华为NAIE Spark在线练习平台，练习Piotrszul Spark入门代码的第一课：RDD基础。这是一个简单的文本处理例子，帮助你熟悉RDD编程的基本流程和函数。实验手册如下：</p>
 
     <p><a href="https://www.bilibili.com/video/BV13a4y1s7G2/">B站视频</a></p>
     <p>实验手册1：Spark环境配置和使用，<a href="lab/ppt/1-env.pptx">PPT</a>（941KB）</p>
@@ -83,13 +83,13 @@
 
     <h2><a name="mit">八、MIT Spark RDD示例</a></h2>
 
-    <p>在MIT（麻省理工学院）的经典课程 6.824 分布式系统中，有一节Spark的课程。本节我们一起来看一下这个课程中讲解的一个计算网页PageRank的RDD编程实例，进一步提高我们对RDD编程的认识</p>
+    <p>MIT（麻省理工学院）经典课程 6.824 分布式系统中，有一节Spark课程。本节我们一起来看这个课程中讲解的网页PageRank RDD编程实例，进一步提高我们对RDD编程的认识。</p>
 
     <p><a href="https://www.bilibili.com/video/BV17V411y7Br/">B站视频</a></p>
 
     <h2><a name="dataframe">九、DataFrame编程</a></h2>
 
-    <p>在实际中，Spark提供了SQL和DataFrame的编程接口，让我们能够很快上手，开展大数据编程。本节介绍这些编程接口，然后基于华为NAIE Spark在线练习平台，一起来练习Piotrszul Spark入门练习代码的第二课：结构化数据编程基础。学习了这一课，你就可以开始你的Spark编程之旅了。Enjoy！</p>
+    <p>实际中，Spark提供了SQL和DataFrame编程接口，让我们能够快速上手大数据编程。本节介绍这些编程接口，然后基于华为NAIE Spark在线大数据实验平台，练习Piotrszul Spark入门练习代码的第二课：结构化数据编程。学习了这一课，你就可以开始你的Spark编程之旅了。实验手册如下。Enjoy！</p>
 
     <p><a href="https://www.bilibili.com/video/BV1a5411L7vt/">B站视频</a></p>
     <p><a href="ppt/9-dataframe.pdf">PPT</a>（PDF，3.4MB）</p>
