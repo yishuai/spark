@@ -22,28 +22,53 @@
 
     <h3>目录</h3>
     <ol>
-      <li><a href="#intro">Spark的优点和特性</a></li>
-      <li><a href="#memory">基于内存的数据分享</a></li>
-      <li><a href="#component">Spark的组成</a></li>
-      <li><a href="#rdd">弹性分布式数据集（RDD）</a></li>
-      <li><a href="#partition">分区并行机制</a></li>
-      <li><a href="#method">RDD操作方法</a></li>
-      <li><a href="#rdd-lab">RDD编程练习</a></li>
-      <li><a href="#mit">MIT Spark RDD示例</a></li>
-      <li><a href="#dataframe">DataFrame编程</a></li>
-      <li><a href="#lab">实验介绍</a></li>
-      <li><a href="#stream">Streaming流式计算</a></li>
-      <li><a href="#ml">机器学习</a></li>
-      <li><a href="#spark">Spark实验平台</a></li>
-      <li><a href="#naie">NAIE文件上传技巧</a></li>
-      <li><a href="#dfe">DataFrame入门示例</a></li>
-      <li><a href="#prince">单词计数示例</a></li>
-
+      <li>Spark</li>
+      <ul>
+        <li><a href="#intro">优点和特性</a></li>
+        <li><a href="#memory">基于内存的数据分享</a></li>
+        <li><a href="#component">内核和组件</a></li>
+      </ul>
+      <li>RDD</li>
+      <ul>
+        <li><a href="#rdd">弹性分布式数据集（RDD）</a></li>
+        <li><a href="#partition">分区并行机制</a></li>
+        <li><a href="#method">RDD操作方法</a></li>
+        <li><a href="#rdd-lab">RDD编程练习</a></li>
+        <li><a href="#mit">MIT RDD编程示例</a></li>
+      </ul>
+      <li>DataFrame</li>
+      <ul>
+        <li><a href="#dataframe">DataFrame编程</a></li>
+        <li><a href="#df">DataFrame入门示例</a></li>
+        <li><a href="#pandas">Python数据处理</a></li>
+      </ul>
+      <li>组件</li>
+      <ul>
+        <li><a href="#stream">Streaming流式计算</a></li>
+        <li><a href="#ml">机器学习</a></li>
+      </ul>
+      <li>实验</li>
+      <ul>
+        <li><a href="#lab">实验介绍</a></li>
+        <li><a href="#prince">单词计数示例</a></li>
+      </ul>
+      <li>实验平台</li>
+      <ul>
+        <li><a href="#spark">实验平台</a></li>
+        <li><a href="#naienb">Jupyter Notebook</a></li>
+        <li><a href="#naieup">NAIE文件上传技巧</a></li>
+      </ul>
     </ol>
+
+
+
+<!-- <h2><a name="">、</a></h2>
 
     <!-- == -->
 
-    <h2><a name="intro">一、Spark的优点和特性</a></h2>
+  <h1>A. Spark</h1>
+
+    <h2><a name="intro">一、优点和特性</a></h2>
 
     <p>Spark是目前最流行的大数据计算平台。我们首先简单了解一下它的各项优点和特性。</p>
 
@@ -61,6 +86,8 @@
     <p>本节介绍Spark的内核和各组成模块，包括Spark SQL、数据流、机器学习库和图计算库</p>
 
     <p><a href="https://www.bilibili.com/video/BV1yz4y1o7yg/">B站视频</a></p>
+
+  <h1>B. RDD</h1>
 
     <h2><a name="rdd">四、弹性分布式数据集（RDD）</a></h2>
 
@@ -89,11 +116,13 @@
     <p>实验手册1：Spark环境配置和使用，<a href="lab/ppt/1-env.pptx">PPT</a>（941KB）</p>
     <p>实验手册2：RDD和DataFrame练习，<a href="lab/ppt/2-rdd-df.pptx">PPT</a>（60KB）</p>
 
-    <h2><a name="mit">八、MIT Spark RDD示例</a></h2>
+    <h2><a name="mit">八、MIT RDD编程示例</a></h2>
 
     <p>MIT（麻省理工学院）经典课程 6.824 分布式系统中，有一节Spark课程。本节我们一起来看这个课程中讲解的网页PageRank RDD编程实例，进一步提高我们对RDD编程的认识。</p>
 
     <p><a href="https://www.bilibili.com/video/BV17V411y7Br/">B站视频</a></p>
+
+  <h1>C. DataFrame</h1>
 
     <h2><a name="dataframe">九、DataFrame编程</a></h2>
 
@@ -102,15 +131,22 @@
     <p><a href="https://www.bilibili.com/video/BV1a5411L7vt/">B站视频</a></p>
     <p><a href="ppt/9-dataframe.pdf">PPT</a>（PDF，3.4MB）</p>
 
-    <h2><a name="lab">十、实验介绍</a></h2>
+    <h2><a name="df">十、DataFrame入门示例</a></h2>
 
-    <p>本节我们将提供给大家一系列的实验，包括数据和代码，供大家练习。掌握Spark编程的秘诀是什么呢？就是编。好好做好这些实验吧。</p>
+    <p>本节介绍Piotrszul
+      Spark入门练习代码中的DataFrame入门代码。 DataFrame在Spark大数据编程中非常重要，请一定要看看哦。</p>
 
-    <p><a href="https://www.bilibili.com/video/BV1y54y1r7DS/">B站视频</a></p>
+    <p><a href="https://www.bilibili.com/video/BV1nz4y1C7HC/">B站视频</a></p>
 
-    <p>实验手册3：Spark 大数据练习，<a href="lab/ppt/3-lab.pptx">PPT</a>（64KB）</p>
+    <h2><a name="pandas">十一、Python数据处理</a></h2>
 
-    <h2><a name="stream">十一、Streaming流式计算</a></h2>
+    <p>本节介绍用Python进行数据分析和处理时常用到的几个库：Pandas，NumPy，SciPy，Matplotlib。学会了它们，你就可以用Python进行基本的数据分析了哦，快快学习吧。</p>
+
+    <p><a href="https://www.bilibili.com/video/BV1Ya411F7La/">B站视频</a></p>
+
+  <h1>D. 组件</h1>
+
+    <h2><a name="stream">十二、Streaming流式计算</a></h2>
 
     <p>Streaming流式计算能及时给出分析结果，帮助决策、管理和控制，因此应用越来越广。本节介绍Spark流式计算的基本原理，并讲解一个代码。</p>
 
@@ -118,39 +154,57 @@
 
     <p><a href="ppt/16-streaming.pdf">PPT</a>（PDF，1.7MB）</p>
 
-    <h2><a name="ml">十二、机器学习</a></h2>
+    <h2><a name="ml">十三、机器学习</a></h2>
 
-    <p>人工智能时代，机器学习是同学们必须掌握的技能。本节介绍Spark机器学习相关的各种函数，并定位到各个实验中。通过本节及其配套实验的练习，你将打开机器学习的大门。加油！</p>
+    <p>人工智能时代，机器学习是同学们必须掌握的技能。本节介绍Spark机器学习相关的各种函数，并定位到各个实验中。通过本节及其配套实验的练习，你将打开机器学习的大门。加油！我们还提供了一个基于Python机器学习库SciKit Learn的Python机器学习入门指南，它能帮助你快速上手Python机器学习，快来看看吧。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1eK4y1E7b8/">B站视频</a></p>
 
     <p><a href="ppt/15-ml.pdf">PPT</a>（PDF，1.1MB）</p>
 
-    <h2><a name="spark">十三、Spark实验平台</a></h2>
+    <p>张璇，Python机器学习入门指南：<a href="/lab/zhangxuan-guide.docx">Doc</a>（180KB），<a
+        href="/lab/zhangxuan-guide.pdf">PDF</a>（343KB）</p>
+
+  <h1>E. 实验</h1>
+
+    <h2><a name="lab">十四、实验介绍</a></h2>
+
+    <p>本节我们将提供给大家一系列的实验，包括数据和代码，供大家练习。掌握Spark编程的秘诀是什么呢？就是编。好好做好这些实验吧。</p>
+
+    <p><a href="https://www.bilibili.com/video/BV1y54y1r7DS/">B站视频</a></p>
+
+    <p>实验手册3：Spark 大数据练习，<a href="lab/ppt/3-lab.pptx">PPT</a>（64KB）</p>
+
+    <h2><a name="prince">十五、单词计数示例</a></h2>
+
+    <p>本节介绍利用 RDD 和 DataFrame 对文本中的单词进行筛选、频率统计、排序、和结果保存。这项工作在大数据编程中经常遇到，请一定要看看哦。</p>
+
+    <p><a href="https://www.bilibili.com/video/BV12K41137kS/">B站视频</a></p>
+
+    <p><a href="">B站视频</a></p>
+
+    <p><a href="/lab/pandas-cheat-sheet.pdf">Pandas函数速查表</a>（PDF，180KB）</p>
+
+  <h1>F. 实验平台</h1>
+
+    <h2><a name="spark">十六、实验平台</a></h2>
 
     <p>Spark是目前大数据系统的主流平台。安装Spark非常简单，你也可以利用很多在线的Spark实验环境，快来看看吧。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1jA41147T9/">B站视频</a></p>
     <p>课程PPT：<a href="ppt/13-spark.pptx">PPT</a>（1MB）</p>
 
-    <h2><a name="naie">十四、NAIE文件上传技巧</a></h2>
+    <h2><a name="naienb">十七、Jupyter Notebook</a></h2>
+
+    <p>本节以华为NAIE Python/PySpark 在线实验平台为例，讲解如何使用 Jupyter Notebook 这个超级友好的工具，在浏览器中进行Python编程。Jupyter Notebook 太好用了，你一定会喜欢它的。快来看看吧。</p>
+
+    <p><a href="https://www.bilibili.com/video/BV1WZ4y1g7Zt/">B站视频</a></p>
+
+    <h2><a name="naieup">十八、NAIE文件上传技巧</a></h2>
 
     <p>本节介绍在华为NAIE平台上传文件后，找到该文件，确定它的路径的方法。很多同学在操作中遇到这一难题，请一定要看看哦。</p>
 
     <p><a href="https://www.bilibili.com/video/BV1TV411h7TR/">B站视频</a></p>
-
-    <h2><a name="dfe">十五、DataFrame入门示例</a></h2>
-
-    <p>本节介绍Piotrszul
-    Spark入门练习代码中的DataFrame入门代码。 DataFrame在Spark大数据编程中非常重要，请一定要看看哦。</p>
-
-    <p><a href="https://www.bilibili.com/video/BV1nz4y1C7HC/">B站视频</a></p>
-
-    <h2><a name="prince">十六、单词计数示例</a></h2>
-
-    <p>本节介绍利用 RDD 和 DataFrame 对文本中的单词进行筛选、频率统计、排序、和结果保存。这项工作在大数据编程中经常遇到，请一定要看看哦。</p>
-
-    <p><a href="https://www.bilibili.com/video/BV12K41137kS/">B站视频</a></p>
 
 
     <!-- <h2><a name="">、</a></h2>
